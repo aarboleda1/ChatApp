@@ -29,7 +29,7 @@
 				return false;
 			});
 			socket.on('chat message', function(message) {
-				$('#messages').append($('<li>').text(message));
+				$('#messages').prepend($('<li>').text(message));
 			});
 		</script>
 	</body>
