@@ -21,6 +21,16 @@
 
 		<script src="/socket.io/socket.io.js"></script>
 		<script   src="https://code.jquery.com/jquery-3.1.0.min.js"   integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="   crossorigin="anonymous"></script>
-		<script src="main.js"></script>
+		<script>
+			var socket = io();
+			$('form').submit(function() {
+				socket.emit('chat message', $('#m').val());
+				$('#m').val('');
+				return false;
+			});
+			socket.on('chat message', function(message) {
+				$('#messages').append($('<li>').text(message));
+			});
+		</script>
 	</body>
 </html>
