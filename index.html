@@ -2,7 +2,6 @@
 <html>
 	<head>
 		<title>Chat Application</title>
-		<link rel="stylesheet" type="text/css" href="./style.css">
 		<style>
 		  * { margin: 0; padding: 0; box-sizing: border-box; }
 	      body { font: 13px Helvetica, Arial; }
@@ -21,17 +20,7 @@
 		</form>
 
 		<script src="/socket.io/socket.io.js"></script>
-		<script src="http://code.jquery.com/jquery-1.11.1.js"></script>
-		<script>
-			var socket = io();
-			$('form').submit(function() {
-				socket.emit('chat message', $('#m').val());
-				$('#m').val('');
-				return false;
-			});
-			socket.on('chat message', function(message) {
-				$('#messages').append($('<li>').text(message));
-			});
-		</script>
+		<script   src="https://code.jquery.com/jquery-3.1.0.min.js"   integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="   crossorigin="anonymous"></script>
+		<script src="main.js"></script>
 	</body>
 </html>
