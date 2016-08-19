@@ -6,4 +6,5 @@ $('form').submit(function() {
 });
 socket.on('chat message', function(message) {
 	$('#messages').prepend($('<li>').text(message));
+	console.dir(data);
 });
