@@ -2,20 +2,19 @@
 <html>
 	<head>
 		<title>Chat Application</title>
+		<link rel="stylesheet" href="https://opensource.keycdn.com/fontawesome/4.6.3/font-awesome.min.css">
 		<link rel="stylesheet" type="text/css" href="public/css/main.css" />
 	</head>
 	<body>
 		<form class="nameInput" action="" name="userName">
-			<input type="text" id="nameSubmit" label="Insert username here"/>
+			<input type="text" id="nameSubmit" placeholder="Insert username here" />
 			<button type="submit"> submit </button>
+			<p class="numUsers"><i class="fa fa-user fa-2x" aria-hidden="true"></i> 7</p>
 		</form>
-		<div class="header">
-			<h1>Chat Application</h1>
-		</div>
 		<ul id="messages"></ul>
 		<form class="sendchat" action="">
-			<input id="m" autocomplete="off" />
-			<button>Send</button>
+			<input id="m" autocomplete="off" placeholder="Send a message!"/>
+			<button><i class="fa fa-paper-plane fa-2x" aria-hidden="true"></i></button>
 		</form>
 
 		<script src="/socket.io/socket.io.js"></script>

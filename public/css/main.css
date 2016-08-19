@@ -4,57 +4,81 @@
   box-sizing: border-box;
   background-color: #EEEEEE;
 }
+
 body {
   font: 13px Helvetica, Arial;
 }
+
 form {
-  background: #000;
+  background: #BE3C3A;
   padding: 3px;
   position: fixed;
   bottom: 0;
+  height: 55px;
   width: 100%;
 }
+
 form input {
   border: 0;
   padding: 10px;
   width: 90%;
   margin-right: .5%;
 }
+
+.fa {
+  width: 25px;
+}
+
 form button {
-  width: 9%;
-  background: rgb(130, 224, 255);
   border: none;
+  height: 90%;
+  border-radius: 50%;
   padding: 10px;
-}
-
-.header {
-  text-align: center;
-  width: 100%;
-  margin: auto;
-  padding-bottom: 15px;
-  border-bottom: 1px solid black;
-}
-
-.header h1 {
-  font-weight: 500;
-  text-align: center;
-  font-size: 45px;
 }
 
 #messages {
   list-style-type: none;
   margin: 0;
+  margin-top: 50px;
   padding: 0;
+  padding-left: 15px;
 }
-#messages li
-{ padding: 5px 10px;
+
+#messages li {
+  padding-top: 18px;
+  padding-left: 10px;
+  height: 50px;
 }
+
 #messages li:nth-child(odd) {
-  background: #eee;
+  background: #FFFFFF;
 }
-.nameInput{
-	top: 0; width: 100%; height: 40px; background-color: grey;  
+
+.nameInput {
+	top: 0; width: 100%; height: 50px; background-color: #BE3C3A;
 }
+
 .nameInput input {
 	top: 0; width: 300px; height: 30px; margin-top: 5px; background-color: white; border-radius: 8px;
+}
+
+.nameInput button {
+  padding: 6px;
+}
+
+.sendchat {
+  padding-left: 5%;
+  width: 100%:
+}
+
+.numUsers {
+  float: right;
+  display: inline;
+  background-color: transparent;
+  color: white;
+  margin: 10px 10px 0 0;
+}
+
+.numUsers i {
+  background-color: transparent;
 }

@@ -1,6 +1,21 @@
 var socket = io();
 var nameVariable = "";
-console.log(nameVariable);
+var username;
+
+// function setUsername () {
+// 	username = $('#usernameInput').val();
+// 	$('#usernameInput').val('');
+// 	console.log(username);
+//
+// 	if (username) {
+// 		socket.emit('add user', username);
+// 	}
+// }
+//
+// $('#nameSubmit').on('click', function () {
+// 	setUsername();
+// 	return false;
+// });
 
 // Save user name
 $('.nameInput').submit(function () {
