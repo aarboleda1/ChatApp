@@ -12,7 +12,7 @@ app.get('/',function(req,response){
 });
 
 io.on('connection', function(socket) {
-<<<<<<< HEAD
+
 	// app.use(session({
 	// genid: function (req) {
 	// 	console.log(genuuid())
