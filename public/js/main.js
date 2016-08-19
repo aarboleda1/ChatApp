@@ -5,7 +5,6 @@ console.log(nameVariable);
 // Save user name
 $('.nameInput').submit(function () {
     nameVariable = $('#nameSubmit').val();
-		console.log(nameVariable);
     $('#nameSubmit').val('');
 		return false;
 });
@@ -22,6 +21,8 @@ socket.on('chat message', function(message) {
 	$('#messages').prepend($('<li>').text(nameVariable + ": " + message));
 	// console.dir(data); -- Commented out until further need
 });
+
+
 
 //create a jquery funciton
 //so that name input variable is assigned to each text
