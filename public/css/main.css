@@ -5,6 +5,24 @@
   background-color: #EEEEEE;
 }
 
+h1 {
+	font-family: 'Courier New', Courier, monospace;
+	font-size: 3rem;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	color: #fff;
+	text-shadow: 0 0 1rem #000;
+	text-align: center;
+	padding: 1rem 0;
+	animation-name: title_anim;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	z-index: 50;
+}
+
 body {
   font: 13px Helvetica, Arial;
 }
@@ -32,8 +50,8 @@ form input {
 form button {
   border: none;
   height: 90%;
-  border-radius: 50%;
   padding: 10px;
+  border-radius: 50%;
 }
 
 #messages {
@@ -41,7 +59,6 @@ form button {
   margin: 0;
   margin-top: 50px;
   padding: 0;
-  padding-left: 15px;
 }
 
 #messages li {
@@ -81,4 +98,29 @@ form button {
 
 .numUsers i {
   background-color: transparent;
+}
+
+/* Giphs */
+
+main {
+	display: flex;
+	flex-direction: row;
+	line-height: 1;
+  float: right;
+}
+
+main video {
+	z-index: 100;
+	position: absolute;
+  right: 0;
+  float: right;
+}
+
+main #mosaic {
+	flex: auto;
+	z-index: 1;
+}
+
+#mosaic img {
+	vertical-align: bottom;
 }
