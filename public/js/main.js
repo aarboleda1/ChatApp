@@ -1,6 +1,6 @@
 var socket = io();
-var currentUser = "";
-var numUsers = 1;
+var nameVariable = "";
+var username;
 
 // function setUsername () {
 // 	username = $('#usernameInput').val();
@@ -75,8 +75,11 @@ function init() {
 
 		shooter.getShot(onFrameCaptured, 10, 0.2, function onProgress(progress) {
       console.log("getShot called")
-			//Animate a progress bar or similar using the `progress` value
+			// Not doing anything in the callback,
+			// but you could animate a progress bar or similar using the `progress` value
 		});
+
+
 
 	}
 
